@@ -4,26 +4,6 @@
  */
 'use strict';
 
-const modeToggler = document.querySelector('.bringer-mode-toggler');
-const body = document.body;
-
-// Check for saved user preference
-const savedTheme = localStorage.getItem('theme');
-if (savedTheme === 'light') {
-  body.classList.add('light-mode');
-}
-
-modeToggler.addEventListener('click', () => {
-  body.classList.toggle('light-mode');
-
-  // Save preference
-  if (body.classList.contains('light-mode')) {
-    localStorage.setItem('theme', 'light');
-  } else {
-    localStorage.setItem('theme', 'dark');
-  }
-});
-
 // Core Options
 const bringer_config = {
   // Smooth Scroll
@@ -1407,7 +1387,7 @@ jQuery(function ($) {
   // Init Template
   $(document).ready(function () {
     // General UI
-    RightClickProtection('.bringer-rcp-wrap');
+    // RightClickProtection('.bringer-rcp-wrap');
     MainMenuInit();
     CircleLinks();
 
@@ -1460,4 +1440,24 @@ jQuery(function ($) {
         jQuery(window).trigger('resize');
       }, 100);
     });
+});
+
+const modeToggler = document.querySelector('.bringer-mode-toggler');
+const body = document.body;
+
+// Check for saved user preference
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme === 'light') {
+  body.classList.add('light-mode');
+}
+
+modeToggler.addEventListener('click', () => {
+  body.classList.toggle('light-mode');
+
+  // Save preference
+  if (body.classList.contains('light-mode')) {
+    localStorage.setItem('theme', 'light');
+  } else {
+    localStorage.setItem('theme', 'dark');
+  }
 });

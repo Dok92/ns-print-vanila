@@ -164,7 +164,7 @@ body *::after {
 
   /* === HEADINGS === */
   /* H1 Heading font size */
-  --bringer-t-h1-fs: 80px;
+  --bringer-t-h1-fs: 60px;
 
   /* H1 Heading letter spacing */
   --bringer-t-h1-ls: -0.05em;
@@ -422,7 +422,7 @@ body *::after {
   :root {
     --stg-container-width: calc(100svw - 2 * var(--stg-gap));
 
-    --bringer-t-h1-fs: 48px;
+    --bringer-t-h1-fs: 40px;
     --bringer-t-h2-fs: 32px;
     --bringer-t-h3-fs: 28px;
     --bringer-t-h4-fs: 24px;

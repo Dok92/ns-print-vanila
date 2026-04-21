@@ -522,6 +522,9 @@ h6 sup {
 h1.bringer-page-title {
   margin-bottom: calc(-1 * var(--stg-small-gap));
 }
+h1.bringer-page-title span {
+  color: var(--bringer-s-accent);
+}
 .bringer-section-title {
   margin-bottom: var(--stg-large-gap);
 }
@@ -1855,6 +1858,7 @@ ul.bringer-socials-list.stg-xl-gap {
 .bringer-text-fill-mask {
   background: linear-gradient(var(--bringer-s-heading), var(--bringer-s-heading)) left top no-repeat;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: var(--bringer-s-heading-fade);
 }
 
@@ -3382,7 +3386,7 @@ a.bringer-arrow-link {
   padding: 0;
   contain: paint;
 }
-.bringer-bento-grid img {
+.bringer-bento-grid img:not(.phone-hero) {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -3790,7 +3794,7 @@ body:has(.bringer-infinite-list) .bringer-backlight {
 .bringer-bento-grid div[data-bg-src] h5,
 .bringer-bento-grid div[data-bg-src] h6,
 .bringer-bento-grid div[data-bg-src] p.bringer-large-text {
-  color: var(--bringer-s-accented-text);
+  color: #33363b;
 }
 .bringer-grid-cta .is-medium {
   display: flex;
@@ -4473,4 +4477,9 @@ button.pswp__button.bringer-pswp-next::after {
 [data-unload='zoom-in-up-left'].is-unloading,
 [data-appear='zoom-out-down-right'] {
   transform: translate(calc(-1 * var(--stea-move)), calc(-1 * var(--stea-move))) scale(var(--stea-zoom-out));
+}
+
+.phone-hero {
+  width: 48px;
+  height: 48px;
 }
