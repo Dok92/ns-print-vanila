@@ -855,6 +855,10 @@
     padding-right: var(--stg-gap);
   }
 
+  h6 {
+    max-width: 150px;
+  }
+
   /* === Mobile Menu === */
   .bringer-mobile-nav {
     max-width: 100%;
@@ -1311,5 +1315,11 @@
   }
   .bringer-menu-widget {
     font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .bringer-portfolio-short-item .bringer-icon {
+    width: 14px;
   }
 }
