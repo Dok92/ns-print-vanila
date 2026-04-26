@@ -2513,7 +2513,7 @@ a.bringer-arrow-link {
   transition: transform 0.3s;
   will-change: transform;
   contain: paint;
-  aspect-ratio: 1/1;
+  /* aspect-ratio: 1/1; */
   border-radius: var(--bringer-small-br);
 }
 .bringer-portfolio-card-image .st-lazy-wrapper {
