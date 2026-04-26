@@ -18,7 +18,7 @@
   --bringer-s-heading-fade: #07090d80;
   --bringer-s-text: #33363b;
 
-  --bringer-s-accent: #2b56c5; /* Slightly darker for better contrast on white */
+  /* --bringer-s-accent: #2b56c5;  */
   --bringer-button-hover-bg: #2b56c5d0;
   --bringer-s-text-accent: #1a44b5;
 
@@ -305,7 +305,7 @@ body *::after {
   --bringer-xs-br: 8px;
 
   /* Button padding */
-  --bringer-button-spacing: 13px 24px 14px 24px;
+  --bringer-button-spacing: 14px;
 
   /* Button border radius */
   --bringer-button-br: var(--bringer-xs-br);

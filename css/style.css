@@ -1357,7 +1357,7 @@ section.backlight-top:last-child::before {
 .bringer-menu-widget ul {
   margin: -8px 0;
 }
-.bringer-menu-widget ul li::before {
+.bringer-menu-widget ul li:not(.social)::before {
   content: '';
   position: absolute;
   left: 0;
@@ -4485,15 +4485,19 @@ button.pswp__button.bringer-pswp-next::after {
 }
 
 .logo-light,
-.logo-dark {
+.logo-dark,
+.icon-toggler-light,
+.icon-toggler-dark {
   display: none;
 }
 
-body:not(.light-mode) .logo-dark {
+body:not(.light-mode) .logo-dark,
+body:not(.light-mode) .icon-toggler-dark {
   display: block;
 }
 
-body.light-mode .logo-light {
+body.light-mode .logo-light,
+body.light-mode .icon-toggler-light {
   display: block;
 }
 
