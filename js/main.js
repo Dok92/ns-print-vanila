@@ -981,31 +981,6 @@ jQuery(function ($) {
         }
       });
     }
-
-    // Parallax Media
-    if (jQuery('.bringer-parallax-media:not(.is-init)').length) {
-      jQuery('.bringer-parallax-media:not(.is-init)').each(function () {
-        let $this = jQuery(this);
-        if ($this.hasClass('disable-on-t') && window.innerWidth > 739 && window.innerWidth < 1200) {
-          return false;
-        }
-        if ($this.hasClass('disable-on-tp') && window.innerWidth > 739 && window.innerWidth < 960) {
-          return false;
-        }
-        if ($this.hasClass('disable-on-m') && window.innerWidth < 739) {
-          return false;
-        }
-        let spd =
-          $this.attr('data-parallax-speed') !== undefined ? parseInt($this.attr('data-parallax-speed'), 10) : 10;
-        $this.addClass('is-init');
-        $this.find('img').each(function () {
-          core.sap.addParallaxMedia(this, { speed: spd });
-        });
-        $this.find('video').each(function () {
-          core.sap.addParallaxMedia(this, { speed: spd });
-        });
-      });
-    }
   }
 
   // --- DATA BACKGROUND --- //
