@@ -282,7 +282,7 @@
     left: calc(-1 * var(--stg-gap) + 2px);
     transform: translateY(-1px);
   }
-  .bringer-mobile-menu a {
+  .bringer-mobile-menu a:not(#nav-cta) {
     color: var(--bringer-c-menu);
     display: block;
     position: relative;
@@ -1313,8 +1313,11 @@
   .bringer-footer-widgets div[class*='stg-tp-col']:has(.bringer-info-widget) {
     padding: 0;
   }
-  .bringer-menu-widget {
-    font-size: 12px;
+
+  #mobile-nav-cta {
+    display: flex;
+    margin-top: 2rem;
+    z-index: 50000000;
   }
 }
 

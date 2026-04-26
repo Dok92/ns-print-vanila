@@ -1342,7 +1342,7 @@ section.backlight-top:last-child::before {
 }
 
 /* Widget: Menu */
-.bringer-menu-widget ul li {
+.bringer-menu-widget ul li:not(.social) {
   margin: 0 -8px;
   position: relative;
 }
@@ -4495,4 +4495,12 @@ body:not(.light-mode) .logo-dark {
 
 body.light-mode .logo-light {
   display: block;
+}
+
+#credits {
+  color: var(--bringer-s-text-accent) !important;
+}
+
+#mobile-nav-cta {
+  display: none;
 }
