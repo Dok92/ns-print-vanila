@@ -4483,3 +4483,16 @@ button.pswp__button.bringer-pswp-next::after {
   width: 48px;
   height: 48px;
 }
+
+.logo-light,
+.logo-dark {
+  display: none;
+}
+
+body:not(.light-mode) .logo-dark {
+  display: block;
+}
+
+body.light-mode .logo-light {
+  display: block;
+}

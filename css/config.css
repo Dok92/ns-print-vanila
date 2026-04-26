@@ -6,6 +6,33 @@
 /* ============
    COLOR SCHEME
 =============== */
+
+/* Light Mode Overrides */
+.light-mode {
+  --bringer-s-body-bg: #ffffff;
+  --bringer-s-nav: #ffffffee;
+  --bringer-s-container-bg: #eaeff3;
+  --bringer-s-container-frosted: #f4f7faee;
+
+  --bringer-s-heading: #07090d;
+  --bringer-s-heading-fade: #07090d80;
+  --bringer-s-text: #33363b;
+
+  --bringer-s-accent: #2b56c5; /* Slightly darker for better contrast on white */
+  --bringer-button-hover-bg: #2b56c5d0;
+  --bringer-s-text-accent: #1a44b5;
+
+  --bringer-s-border: #07090d15;
+  --bringer-s-border-mute: #07090d08;
+  --bringer-s-border-highlight: #07090d20;
+  --bringer-s-backlight: #11151d19;
+  --bringer-s-box-shadow: #07090d0a;
+
+  --bringer-s-cursor-light: #1f2d4a19;
+  --bringer-c-menu: #07090d;
+  --bringer-c-menu-hover: #0039ab;
+}
+
 :root {
   /* Used as body background and overlays */
   --bringer-s-body-bg: #07090d;
@@ -83,28 +110,6 @@ body *::after {
     color 0.2s ease,
     border-color 0.2s ease,
     box-shadow 0.2s ease;
-}
-
-/* Light Mode Overrides */
-.light-mode {
-  --bringer-s-body-bg: #ffffff;
-  --bringer-s-nav: #ffffffee;
-  --bringer-s-container-bg: #f4f7fa;
-  --bringer-s-container-frosted: #f4f7faee;
-
-  --bringer-s-heading: #07090d;
-  --bringer-s-heading-fade: #07090d80;
-  --bringer-s-text: #33363b;
-
-  --bringer-s-accent: #2b56c5; /* Slightly darker for better contrast on white */
-  --bringer-button-hover-bg: #2b56c5d0;
-  --bringer-s-text-accent: #1a44b5;
-
-  --bringer-s-border: #07090d15;
-  --bringer-s-border-mute: #07090d08;
-  --bringer-s-border-highlight: #07090d20;
-  --bringer-s-backlight: #11151d19;
-  --bringer-s-box-shadow: #07090d0a;
 }
 
 /* ==========
