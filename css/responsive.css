@@ -1321,10 +1321,15 @@
   }
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 390px) {
   .bringer-portfolio-short-item .bringer-icon {
     width: 14px;
   }
+  .bringer-page-title {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 360px) {
   .bringer-page-title {
     font-size: 30px;
   }

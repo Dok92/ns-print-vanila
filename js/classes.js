@@ -328,8 +328,19 @@ class Bringer_Mobile_Menu {
     this.$overlay.on('click', function () {
       _self.$body.removeClass('show-menu');
     });
-    jQuery('.nav-link').on('click', function () {
-      _self.$body.removeClass('show-menu');
+    jQuery('.nav-link').on('click', function (e) {
+      const $link = jQuery(this);
+      const href = $link.attr('href');
+
+      // Ako je interni link (anchor), dozvoli mu da radi normalno
+      if (href && href.startsWith('#')) {
+        _self.$body.removeClass('show-menu');
+      } else {
+        // Ako vodi na drugu stranu, pusti ga da krene pa zatvori
+        setTimeout(() => {
+          _self.$body.removeClass('show-menu');
+        }, 100);
+      }
     });
   }
 }
