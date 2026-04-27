@@ -925,11 +925,37 @@ ul.main-menu li.current-menu-ancestor > a {
   align-items: center;
   justify-content: center;
   gap: 2rem;
+  z-index: 100;
 }
 .bringer-header-rp img {
   width: 24px;
   height: 24px;
   transition: filter 0.3s;
+}
+.toggler-hamburger-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  z-index: 100;
+}
+
+.bringer-mobile-header-inner .bringer-header-rp {
+  background: none;
+  border: none;
+}
+.bringer-mobile-header-inner .bringer-header-rp:hover {
+  background: none;
+}
+.bringer-mobile-header-inner .bringer-mode-toggler {
+  background: none;
+  border: none;
+}
+.bringer-mobile-header-inner .bringer-mode-toggler:hover {
+  background: none;
+}
+.bringer-mobile-header-inner .icon-toggler-light {
+  filter: invert(1);
 }
 ul.main-menu li.menu-item-has-children > a::after {
   content: '';

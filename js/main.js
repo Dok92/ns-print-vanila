@@ -1380,23 +1380,18 @@ jQuery(function ($) {
       }, 100);
     });
 });
-
-const modeToggler = document.querySelector('.bringer-mode-toggler');
+const modeTogglers = document.querySelectorAll('.bringer-mode-toggler');
 const body = document.body;
 
-// Check for saved user preference
 const savedTheme = localStorage.getItem('theme');
 if (savedTheme === 'light') {
   body.classList.add('light-mode');
 }
 
-modeToggler.addEventListener('click', () => {
-  body.classList.toggle('light-mode');
-
-  // Save preference
-  if (body.classList.contains('light-mode')) {
-    localStorage.setItem('theme', 'light');
-  } else {
-    localStorage.setItem('theme', 'dark');
-  }
+modeTogglers.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    body.classList.toggle('light-mode');
+    const isLight = body.classList.contains('light-mode');
+    localStorage.setItem('theme', isLight ? 'light' : 'dark');
+  });
 });
