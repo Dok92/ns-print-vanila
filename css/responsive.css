@@ -1333,4 +1333,13 @@
   .bringer-page-title {
     font-size: 30px;
   }
+  .bringer-highlight {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 340px) {
+  .bringer-hero-type06 .is-large .bringer-bento-hero-media p {
+    max-width: calc(100% - 45px - var(--stg-small-gap));
+    margin-left: -1rem;
+  }
 }
